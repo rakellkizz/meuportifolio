@@ -1,0 +1,1 @@
+"REPORT z_tabela_interna.\n\nDATA: lt_tabela TYPE TABLE OF string,\n      lv_linha  TYPE string.\n\nAPPEND 'Linha 1' TO lt_tabela.\nAPPEND 'Linha 2' TO lt_tabela.\nAPPEND 'Linha 3' TO lt_tabela.\n\nLOOP AT lt_tabela INTO lv_linha.\n  WRITE: / lv_linha.\nENDLOOP." 
