@@ -1,0 +1,1 @@
+"REPORT z_alv_report.\n\nTABLES: spfli.\nDATA: lt_spfli TYPE TABLE OF spfli,\n      wa_spfli TYPE spfli.\n\nSELECT * FROM spfli INTO TABLE lt_spfli.\n\nLOOP AT lt_spfli INTO wa_spfli.\n  WRITE: / wa_spfli-carrid, wa_spfli-connid, wa_spfli-cityfrom, wa_spfli-cityto.\nENDLOOP." 
