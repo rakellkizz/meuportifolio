@@ -1,0 +1,1 @@
+"REPORT z_idoc_process.\n\nDATA: lt_idocs TYPE TABLE OF edidc,\n      wa_idoc  TYPE edidc.\n\nSELECT * FROM edidc INTO TABLE lt_idocs UP TO 10 ROWS.\n\nLOOP AT lt_idocs INTO wa_idoc.\n  WRITE: / 'IDoc N£mero:', wa_idoc-docnum, 'Tipo:', wa_idoc-idoctyp.\nENDLOOP." 
